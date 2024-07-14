@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Admin Page</h1>
+  <form id="winning-numbers-form" onsubmit="return generateWinningNumbers(event)">
+    <label for="winning-numbers">Generate Winning Numbers:</label>
+    <button type="submit">Generate</button>
+  </form>
+
+  <div id="winning-numbers-container">
+    <p>Winning Numbers:</p>
+    <ul id="winning-numbers-list"></ul>
+  </div>
+
+  <div id="user-data-container">
+    <h2>User Data</h2>
+    <ul id="user-data-list"></ul>
+  </div>
+
+  <div id="winners-container">
+    <h2>Winners</h2>
+    <ul id="winners-list"></ul>
+  </div>
+
+  <script src="admin-script.js"></script>
+</body>
+</html>
