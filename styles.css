@@ -1,0 +1,249 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+}
+
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#boards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.board-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.board-table caption {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.number-ball {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.number-ball:hover {
+  opacity: 0.8;
+}
+
+.number-ball.selected {
+  border: 2px solid #000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#selected-numbers-container {
+  margin-top: 20px;
+}
+
+#selected-numbers-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#selected-numbers-list li {
+  margin: 5px;
+  padding: 5px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+#result-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#ticket-number {
+  font-weight: bold;
+  color: #333;
+}
+
+#timestamp {
+  color: #666;
+}
+
+
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#boards-container,
+#winning-numbers-container,
+#user-data-container,
+#winners-container {
+  margin-top: 20px;
+}
+
+#winning-numbers-list,
+#user-data-list,
+#winners-list,
+#selected-numbers-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#winning-numbers-list li,
+#user-data-list li,
+#winners-list li,
+#selected-numbers-list li {
+  margin: 5px;
+  padding: 5px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.number-ball {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.selected {
+  border: 2px solid black;
+}
+
+

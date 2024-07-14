@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lotto App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Welcome to Lotto App</h1>
+  <p>Please select your role:</p>
+  <button onclick="showLoginForm('user')">User Login</button>
+  <button onclick="showLoginForm('admin')">Admin Login</button>
+
+  <!-- User Login Form -->
+  <div id="user-login-form" class="form-container hidden">
+    <h2>User Login</h2>
+    <form id="user-form" onsubmit="return handleUserLogin(event)">
+      <label for="user-username">Username:</label>
+      <input type="text" id="user-username" required>
+      <label for="user-password">Password:</label>
+      <input type="password" id="user-password" required>
+      <button type="submit">Login</button>
+    </form>
+    <button onclick="showRegistrationForm()">User Registration</button>
+  </div>
+
+  <!-- Admin Login Form -->
+  <div id="admin-login-form" class="form-container hidden">
+    <h2>Admin Login</h2>
+    <form id="admin-form" onsubmit="return handleAdminLogin(event)">
+      <label for="admin-username">Username:</label>
+      <input type="text" id="admin-username" required>
+      <label for="admin-password">Password:</label>
+      <input type="password" id="admin-password" required>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- User Registration Form -->
+  <div id="user-registration-form" class="form-container hidden">
+    <h2>User Registration</h2>
+    <form id="registration-form" onsubmit="return handleUserRegistration(event)">
+      <label for="reg-username">Username:</label>
+      <input type="text" id="reg-username" required>
+      <label for="reg-password">Password:</label>
+      <input type="password" id="reg-password" required>
+      <button type="submit">Register</button>
+    </form>
+    <button onclick="hideRegistrationForm()">Back to Login</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
